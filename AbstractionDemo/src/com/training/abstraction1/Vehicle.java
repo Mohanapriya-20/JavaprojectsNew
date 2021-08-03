@@ -1,26 +1,16 @@
 package com.training.abstraction1;
 
 public abstract class Vehicle extends Accessories {
-	int model, price;
+	String model;
+	double price;
 
-	public Vehicle(int model, int price) {
+	public Vehicle(String model, double price) {
+		// TODO Auto-generated constructor stub
 		super();
 		this.model = model;
 		this.price = price;
 	}
 
-	
-	@Override
-	void internal() {
-		System.out.println("Internal inside vehicle block");
-
-	}
-
-	@Override
-	void external() {
-		System.out.println("External inside vehicle block");
-
-	}
 
 	abstract void getMilage();
 
