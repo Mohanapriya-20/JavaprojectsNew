@@ -13,20 +13,21 @@ public class EmpMain {
 		System.out.println("Enter the Employee's designation");
 		String designation = sc.next();
 
-		Employee emp = new Employee(name, designation);
+		Employee emp;
+		emp = new Employee(name, designation);
 		emp.getDetails();
 
 		switch (designation) {
 		case "manager":
-			Employee e1 = new Employee(1000);
+			emp = new Employee(1000);
 			break;
 
 		case "programmer":
-			Employee e2 = new Employee(1000, 2000);
+			emp = new Employee(1000, 2000);
 			break;
 
 		case "director":
-			Employee e3 = new Employee(1000, 2000, 1000);
+			emp = new Employee(1000, 2000, 1000);
 			break;
 		}
 
