@@ -1,0 +1,24 @@
+package com.training.overriding;
+
+public class Current extends Bank {
+	public Current(double balance) {
+		super(balance);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	@Override
+	void withdraw(double amount) {
+		System.out.println("Current Account Withdarw");
+		balance=balance-amount;
+		
+	}
+
+	@Override
+	void deposit(double amount) {
+		System.out.println("Current Account deposit");
+		balance=balance+amount;
+		
+	}
+
+}
